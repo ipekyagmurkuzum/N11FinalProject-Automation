@@ -41,7 +41,6 @@ public class GetCampaignURLSteps {
         categories.forEach(
                 categoryName -> actor.attemptsTo(
                         Click.on(categoryName.toString())));
-
     }
 
     @And("actor writes url data with category name to a csv file")
