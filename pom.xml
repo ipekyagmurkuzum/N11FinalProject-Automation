@@ -3,7 +3,6 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.example</groupId>
     <artifactId>N11TestCase1</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -16,7 +15,6 @@
         <tags></tags>
         <webdriver.base.url></webdriver.base.url>
     </properties>
-
     <build>
         <plugins>
             <plugin>
@@ -132,5 +130,4 @@
             <version>1.14.3</version>
         </dependency>
     </dependencies>
-
 </project>
