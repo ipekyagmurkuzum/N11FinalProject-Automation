@@ -7,7 +7,7 @@ After cloning the project, simply write
 ```
 mvn clean verify
 ```
-to your terminal to run the test. Running this code block will generate the CSV file with the name "campaign_urls_file.csv" under this path:
+to your terminal to run the test. Running this code block will generate the CSV file with the name "*campaign_urls_file.csv*" under this path:
 ```
 N11TestCase1/src/test/resources/generatedFile
 ```
