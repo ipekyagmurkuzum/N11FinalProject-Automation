@@ -1,7 +1,7 @@
-#N11 QA BOOTCAMP FINAL PROJECT CASE1
-##Description
+# N11 QA BOOTCAMP FINAL PROJECT CASE1
+## Description
 This is a test automation project for getting every campaign's url under every category on N11 Campaigns page and writing them to a CSV file. 
-##Run the Project
+## Run the Project
 
 After cloning the project, simply write
 ```
@@ -16,7 +16,7 @@ Also an html report will be generated on this path:
 N11TestCase1/target/site/serenity/index.html
 ```
 
-##Test Output
+## Test Output
 
 **Generated CSV looks like this:**
 
