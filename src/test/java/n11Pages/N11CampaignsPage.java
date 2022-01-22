@@ -1,36 +1,30 @@
 package n11Pages;
 
-import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-
 @DefaultUrl("https://www.n11.com/kampanyalar")
 public class N11CampaignsPage extends PageObject{
 
-
-    public static Target FASHION_BUTTON = Target.the("//*[@data-category=\"giyimAyakkabi\"]")
-            .located(By.xpath("//*[@data-category=\"giyimAyakkabi\"]"));
-    public static Target ELECTRONICS_BUTTON = Target.the("//*[@data-category=\"elektronik\"]")
-            .located(By.xpath("//*[@data-category=\"elektronik\"]"));
-    public static Target HOMEANDLIVING_BUTTON = Target.the("//*[@data-category=\"evYasam\"]")
-            .located(By.xpath("//*[@data-category=\"evYasam\"]"));
-    public static Target BABYCARE_BUTTON = Target.the("//*[@data-category=\"anneBebek\"]")
-            .located(By.xpath("//*[@data-category=\"anneBebek\"]"));
-    public static Target COSMETICS_BUTTON = Target.the("//*[@data-category=\"kozmetikKisiselBakim\"]")
-            .located(By.xpath("//*[@data-category=\"kozmetikKisiselBakim\"]"));
-    public static Target JEWELERY_BUTTON = Target.the("//*[@data-category=\"mucevherSaat\"]")
-            .located(By.xpath("//*[@data-category=\"mucevherSaat\"]"));
-    public static Target SPORTS_BUTTON = Target.the("//*[@data-category=\"spor\"]")
-            .located(By.xpath("//*[@data-category=\"spor\"]"));
-    public static Target MUSICADNBOOKS_BUTTON = Target.the("//*[@data-category=\"kitapOyun\"]")
-            .located(By.xpath("//*[@data-category=\"kitapOyun\"]"));
-    public static Target OTOMATIVE_BUTTON = Target.the("//*[@data-category=\"otomobil\"]")
-            .located(By.xpath("//*[@data-category=\"otomobil\"]"));
-
-    public static Target URL = Target.the("url")
-            .located(By.xpath("//*[@class = \"imgBoxInsetShadow medium\"]//a[text()]"));
+    public static Target FASHION_BUTTON = Target.the("giyimAyakkabi")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Moda')]"));
+    public static Target ELECTRONICS_BUTTON = Target.the("elektronik")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Elektronik')]"));
+    public static Target HOMEANDLIVING_BUTTON = Target.the("evYasam")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Ev & Yaşam')]"));
+    public static Target BABYCARE_BUTTON = Target.the("anneBebek")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Anne & Bebek')]"));
+    public static Target COSMETICS_BUTTON = Target.the("kozmetikKisiselBakim")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Kozmetik & Kişisel Bakım')]"));
+    public static Target JEWELERY_BUTTON = Target.the("mucevherSaat")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Mücevher & Saat')]"));
+    public static Target SPORTS_BUTTON = Target.the("spor")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Spor & Outdoor')]"));
+    public static Target MUSICADNBOOKS_BUTTON = Target.the("kitapOyun")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Kitap, Müzik, Film, Oyun')]"));
+    public static Target OTOMATIVE_BUTTON = Target.the("otomobil")
+            .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Otomotiv & Motosiklet')]"));
 
 }
