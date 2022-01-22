@@ -1,26 +1,25 @@
 package tasks;
 
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Task;
-import scrape.CloseTheFile;
+import net.serenitybdd.screenplay.Performable;
+import scrape.GetCampaignURLs;
 
 import java.io.IOException;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-public class Close implements Task {
+public class GetsEveryCampaignsURL implements Performable {
 
-    public static Close theCSVFile() {
-        return instrumented(Close.class);
+    public static GetsEveryCampaignsURL andWritesItToACSVFile() {
+        return instrumented(GetsEveryCampaignsURL.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         try {
-            CloseTheFile.closeFile();
+            GetCampaignURLs.getUrlAndWriteToExcel();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 }
-

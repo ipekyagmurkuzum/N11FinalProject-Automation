@@ -24,7 +24,7 @@ public class GetCampaignURLStepDefinitions {
 
     @Managed
     public static WebDriver driver;
-    Actor actor = new Actor("she");
+    Actor actor = new Actor("She");
 
     @Given("actor is on the campaigns page on N11")
     public void isOnTheMainPage() {
@@ -38,21 +38,21 @@ public class GetCampaignURLStepDefinitions {
                 categoryName -> {
                     actor.attemptsTo(
                             Click.on(categoryName),
-                            GetEveryCampaignsURL.andWriteItToACSVFile());
+                            GetsEveryCampaignsURL.andWritesItToACSVFile());
                 });
     }
 
     @And("closes the file")
     public void closesTheFile() {
         actor.attemptsTo(
-                Close.theCSVFile());
+                ClosesTheFile.theCSVFile());
     }
 
 
     @Then("file should be read and row number should be checked")
     public void rowNumberShouldBeChecked() {
         actor.attemptsTo(
-                ReadTheFile.checkRowCount());
+                ReadsTheFile.checksRowCount());
     }
 }
 

@@ -9,7 +9,7 @@ public class GetCountLine {
     public static void countLine() throws IOException {
 
         try {
-            reader = new LineNumberReader(new FileReader("src/test/resources/campaign_urls_file.csv"));
+            reader = new LineNumberReader(new FileReader("src/test/resources/generatedFile/campaign_urls_file.csv"));
             while ((reader.readLine()) != null) {
                 lines = reader.getLineNumber();
             }

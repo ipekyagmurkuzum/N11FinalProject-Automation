@@ -18,7 +18,7 @@ public class GetCampaignURLs {
 
     static {
         try {
-            urlsFile = new FileWriter("src/test/resources/campaign_urls_file.csv");
+            urlsFile = new FileWriter("src/test/resources/generatedFile/campaign_urls_file.csv");
             urlsFile.write("Category, URLs\n");
         } catch (IOException e) {
             e.printStackTrace();

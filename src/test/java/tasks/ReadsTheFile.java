@@ -10,10 +10,10 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static scrape.GetCampaignURLs.rowNumber;
 import static scrape.GetCountLine.lines;
 
-public class ReadTheFile implements Performable {
+public class ReadsTheFile implements Performable {
 
-    public static ReadTheFile checkRowCount() {
-        return instrumented(ReadTheFile.class);
+    public static ReadsTheFile checksRowCount() {
+        return instrumented(ReadsTheFile.class);
     }
 
     @Override
@@ -23,6 +23,6 @@ public class ReadTheFile implements Performable {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Assert.assertEquals("Passed",rowNumber,lines-1);
+        Assert.assertEquals("Row number check",rowNumber,lines-1);
     }
 }
