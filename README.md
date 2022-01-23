@@ -20,18 +20,12 @@ N11TestCase1/target/site/serenity/index.html
 
 Generated **CSV** looks like this:
 
-<p>
-<img src="C:\Users\yagmu\OneDrive\Masaüstü\serenity\csv.png"/>
-</p>
+<img src="outputImages/csv.png"/>
 
 Generated report looks like this if test is **passed**:
 
-<p>
-<img src="C:\Users\yagmu\OneDrive\Masaüstü\serenity\passed.png"/>
-</p>
+<img src="outputImages/passed.png"/>
 
 Generated report looks like this if test is **failed**
 
-<p>
-<img src="C:\Users\yagmu\OneDrive\Masaüstü\serenity\failed.png"/>
-</p>
+<img src="outputImages/failed.png"/>
