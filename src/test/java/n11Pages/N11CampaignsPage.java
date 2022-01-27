@@ -1,12 +1,12 @@
 package n11Pages;
 
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
-import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 @DefaultUrl("https://www.n11.com/kampanyalar")
-public class N11CampaignsPage extends PageObject{
+public class N11CampaignsPage extends PageObject {
 
     // 9 category buttons are located in below
 
