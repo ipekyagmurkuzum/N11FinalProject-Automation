@@ -8,6 +8,8 @@ import java.io.IOException;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
+//implementation of closeTheFile method as a task,
+//so that in can be performed by the actor
 public class ClosesTheFile implements Task {
 
     public static ClosesTheFile theCSVFile() {

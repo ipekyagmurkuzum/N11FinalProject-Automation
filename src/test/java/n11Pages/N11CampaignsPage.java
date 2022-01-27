@@ -8,6 +8,8 @@ import org.openqa.selenium.By;
 @DefaultUrl("https://www.n11.com/kampanyalar")
 public class N11CampaignsPage extends PageObject{
 
+    // 9 category buttons are located in below
+
     public static Target FASHION_BUTTON = Target.the("Moda Kategorisi")
             .located(By.xpath("//*[@class=\"title\"][contains(text(), 'Moda')]"));
     public static Target ELECTRONICS_BUTTON = Target.the("Elektronik Kategorisi")

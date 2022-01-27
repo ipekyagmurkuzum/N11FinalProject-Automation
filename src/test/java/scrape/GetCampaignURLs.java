@@ -10,15 +10,20 @@ import java.io.IOException;
 
 import static stepDefinitions.GetCampaignURLStepDefinitions.driver;
 
+// gets campaign url and writes them to a csv file
 public class GetCampaignURLs {
 
-
+    //declare a file writer
     public static FileWriter urlsFile;
+    //declare a row number variable for assertion purposes
     public static int rowNumber;
 
     static {
         try {
+            //create file writer and csv
             urlsFile = new FileWriter("src/test/resources/generatedFile/campaign_urls_file.csv");
+
+            //add title on the first row
             urlsFile.write("Category, URLs\n");
         } catch (IOException e) {
             e.printStackTrace();
@@ -27,17 +32,23 @@ public class GetCampaignURLs {
 
     public static void getUrlAndWriteToExcel() throws IOException {
 
+        //declare a document
         Document document;
 
         String currentUrl = driver.getCurrentUrl();
+        //get current url's html into document variable
         document = Jsoup.connect(currentUrl).get();
 
         try {
             switch (currentUrl) {
                 case "https://www.n11.com/kampanyalar#giyim-ayakkabi":
+                    //get all the links from relevant category
                     Elements links = document.select("section.group.category-11 a[href]");
+                    //for each link
                     for (Element link : links) {
+                        //write it to the csv
                         urlsFile.write("Moda," + link.attr("href") + "\n");
+                        //increase row number by 1
                         rowNumber += 1 ;
                     }
                     break;

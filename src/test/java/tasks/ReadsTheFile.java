@@ -10,6 +10,9 @@ import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static scrape.GetCampaignURLs.rowNumber;
 import static scrape.GetCountLine.lines;
 
+
+//implementation of countLine method as a task,
+//so that in can be performed by the actor
 public class ReadsTheFile implements Performable {
 
     public static ReadsTheFile checksRowCount() {
