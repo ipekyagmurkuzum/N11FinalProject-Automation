@@ -26,6 +26,8 @@ public class ReadsTheFile implements Performable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //check if rowNumber matches (lines-1)
+        // -1 because of the header row
         Assert.assertEquals("Row number check",rowNumber,lines-1);
     }
 }
