@@ -29,7 +29,7 @@ public class GetCampaignURLStepDefinitions {
     @Given("actor is on the campaigns page on N11")
     public void isOnTheMainPage() {
         actor.can(BrowseTheWeb.with(driver));
-        actor.attemptsTo(Navigeto.toN11CampaignsPage());
+        actor.attemptsTo(Navigate.toN11CampaignsPage());
     }
 
     @When("actor gets every campaign's urls within every category and writes them to a new cvs file")
